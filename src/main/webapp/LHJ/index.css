@@ -1,0 +1,30 @@
+@charset "UTF-8";
+*{
+	margin :0px
+}
+header{
+	background-color: blue;
+	padding: 20px;
+	text-align: center;
+	
+}
+nav{
+	background-color: #0000df;
+	padding: 10px;
+	
+}
+ul{
+	display:flex;
+	list-style: none;
+	
+}
+ul li{
+	margin : 0px 50px 0px 0px;
+}
+nav a{
+	text-decoration: none;
+	color: white;	
+}
+section{
+	margin : 30px 0px 0px 20px;
+}

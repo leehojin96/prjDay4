@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/reg.css">
+
+</head>
+<script>
+	function check() {
+		alert("dd");
+
+		let frm = document.frm;
+		let userId = frm.userId;
+		let userName = frm.userName;
+
+		if (userId.value == "") {
+			alert("아이디 입력하세요");
+			userId.focus();
+		} else if (userName.value == "") {
+			alert("이름을 입력하세요");
+			userName.focus();
+		} else {
+			frm.submit(); //action에 지정된 페이지 요청함
+			alert("11");
+		}
+	}
+</script>
+<body>
+	<form name="frm" action="regAction.jsp" method="post">
+
+		<table>
+			<caption>회원 등록</caption>
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" name="userId"></td>
+			</tr>
+
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="userName"></td>
+			</tr>
+
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="text" name="userPw"></td>
+			</tr>
+
+			<tr>
+				<td>주소</td>
+				<td><input type="text" name="userAddr"></td>
+			</tr>
+
+
+
+			<tr>
+				<td colspan="2">
+					<button type="button" onclick="check()">등록</button>
+					<input type="reset" value="취소">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

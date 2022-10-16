@@ -1,0 +1,20 @@
+@charset "UTF-8";
+*{
+	margin:0px;
+}
+table{
+	width:800px;
+	border: 1px solid black;
+	margin: 0px auto;
+}
+td{
+	
+	border: 1px solid black;
+}
+tr td:nth-child(1){
+	text-align: center;
+	width:90px;
+}
+#flextd{
+	display: flex;
+}
